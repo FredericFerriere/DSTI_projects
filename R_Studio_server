@@ -28,6 +28,7 @@ Connecting to the server from the browser
 
 -------------------------
 SCRIPT
+#!/bin/bash
 sudo yum update -y
 sudo amazon-linux-extras install R3.4 -y
 sudo yum install rstudio-server-rhel-1.2.5019-x86_64.rpm -y
