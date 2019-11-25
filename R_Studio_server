@@ -8,7 +8,7 @@ On Ubuntu
 SSH into EC2 instance
 
 Step 1:
-$ sudo yum update
+$ sudo yum update -y
 
 Step 2:
 [DEPRECATED] sudo yum install R
@@ -31,7 +31,8 @@ SCRIPT
 #!/bin/bash
 sudo yum update -y
 sudo amazon-linux-extras install R3.4 -y
+wget https://download2.rstudio.org/server/centos6/x86_64/rstudio-server-rhel-1.2.5019-x86_64.rpm
 sudo yum install rstudio-server-rhel-1.2.5019-x86_64.rpm -y
 sudo useradd testUser
-echo testuser:testPassword | sudo chpasswd
+echo testUser:testPassword | sudo chpasswd
 
